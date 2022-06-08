@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Project</title>
+    <link rel="stylesheet" href="{% static 'apple/css/bootstrap.css' %}"> 
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h2 class="text-center alert alert-danger"> Function Based View
+         ModelForm CRUD Project
+        </h2>
+        {% block content%} 
+
+
+        {% endblock content%}
+    </div>
+   
+   <script src="{% static 'apple/js/jquery.js' %}"></script>
+   <script src="{% static 'apple/js/popper.js' %}"></script>
+   <script src="{% static 'apple/js/bootstrap.js' %}"></script>
+</body>
+</html>
